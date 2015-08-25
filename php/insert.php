@@ -14,7 +14,7 @@ try {
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $sql = "INSERT INTO `acsm_f65787f5fabf0d3`.`puntajes` (`nombre_user`, `puntuacion`) VALUES ('".$nombre."', ".$puntos.");";   
+    $sql = "INSERT INTO `acsm_f65787f5fabf0d3`.`puntajes` (`nombre_user`, `puntuacion`) VALUES (".$nombre.", '".$puntos."');";   
     $conn->exec($sql);
 
     echo "Puntaje cargado correctamente";
