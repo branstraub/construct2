@@ -30,7 +30,7 @@ function cargarpuntuacion(listaPuntuacion){
     setTimeout(function(){
     
     $("table tbody").append("<tr>");
-    $("table tbody").append("<td>" + puntajes.nombre_user + "</td>");
+    $("table tbody").append("<td>" + puntajes.nombre_user.split('_')[0] + "</td>");
     $("table tbody").append("<td>" + puntajes.puntuacion + "</td>");   
     $("table tbody").append("</tr>");
     },1);
