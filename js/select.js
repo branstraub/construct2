@@ -29,11 +29,15 @@ function cargarpuntuacion(listaPuntuacion){
   $.each(listaPuntuacion, function(index, puntajes){
     setTimeout(function(){
     
+if(puntajes.nombre_user != 'cualquiercosa'){
+
     $("table tbody").append("<tr>");
     $("table tbody").append("<td>" + puntajes.nombre_user.split('_')[0] + "</td>");
     $("table tbody").append("<td>" + puntajes.puntuacion + "</td>");   
     $("table tbody").append("</tr>");
-    },1);
+    }
+}
+    ,1);
    $(".actions").append("</table>"); 
   });
 }
