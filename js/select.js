@@ -29,7 +29,7 @@ function cargarpuntuacion(listaPuntuacion){
   $.each(listaPuntuacion, function(index, puntajes){
     setTimeout(function(){
     
-if(puntajes.nombre_user != 'cualquiercosa'){
+if(puntajes.nombre_user.split('_')[0] != 'cualquiercosa'){
 
     $("table tbody").append("<tr>");
     $("table tbody").append("<td>" + puntajes.nombre_user.split('_')[0] + "</td>");
